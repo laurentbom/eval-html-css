@@ -9,10 +9,10 @@
 	span,
 	span:before,
 	span:after {
-		background: rgb(0, 0, 0);
+		background: rgb(255, 255, 255);
 		display: block;
-		height: 2px;
-		width: 80%;
+		height: 3px;
+		width: 100%;
 		opacity: 1;
 		position: absolute;
 		left: 50%;
@@ -26,7 +26,7 @@
 	}
 	// TOP
 	span:before {
-		top: 7px;
+		top: 9px;
 		transform: translate(-50%,-50%);
 	}
 	// MIDDLE
@@ -36,30 +36,30 @@
 	}
 	// BOTTOM
 	span:after {
-		top: -5px;
+		top: -6px;
 		transform: translate(-50%,-50%);
 	}
 	// ROTATION ON HOVER (pour le click rajouter une classe et js)
-	&:hover {
-		// TOP
-		span:before {
-			top: 50%;
-			transform: translate(-50%,-50%) rotate(90deg);;
-		}
-		// MIDDLE
-		span {
-			transform: translate(-50%,-50%) rotate(-45deg);
-			top: 50%;
-		}
-		// BOTTOM
-		span:after {
-			top: 50%;
-			left: 0;
-			transform: rotate(90deg);
-			opacity: 0;
-			width: 0;
-		}
-	}
+	// &:hover {
+	// 	// TOP
+	// 	span:before {
+	// 		top: 50%;
+	// 		transform: translate(-50%,-50%) rotate(90deg);;
+	// 	}
+	// 	// MIDDLE
+	// 	span {
+	// 		transform: translate(-50%,-50%) rotate(-45deg);
+	// 		top: 50%;
+	// 	}
+	// 	// BOTTOM
+	// 	span:after {
+	// 		top: 50%;
+	// 		left: 0;
+	// 		transform: rotate(90deg);
+	// 		opacity: 0;
+	// 		width: 0;
+	// 	}
+	// }
 }
 // Burger Menu with position 
 // .burger-menu{

@@ -1,0 +1,34 @@
+// Mobile First
+
+// Bande Noir
+.header__black{
+  display: none;
+}
+// Partie Logo et pub
+.header__logo{
+  &__img{
+    display: none;
+  }
+  &__pub{
+    padding: 10px 0px;
+    img{
+      width: 100%;
+    }
+  }
+}
+// Barre nav
+.header__nav{
+  background-color: $rouge;
+}
+.nav_container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6px;
+  .header__nav__links{
+    display: none;
+  }
+  .header__nav__socials{
+    display: none;
+  }
+}
