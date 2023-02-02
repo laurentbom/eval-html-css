@@ -129,11 +129,18 @@
       border-left: 1px solid rgba(255, 255, 255, 0.479);
       border-right: 1px solid rgba(255, 255, 255, 0.479);
       padding: 27px 12px;
+      i{
+        transition: .3s all ease-in-out;
+      }
       a{
         color: white;
         font-size: 16px;
         padding: 0px 11px;
       }
+    }
+    &__links i:hover{
+      position: relative;
+      transform: rotateY(180deg);
     }
   }
   .header__nav__socials__search{

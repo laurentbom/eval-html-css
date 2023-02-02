@@ -5,15 +5,17 @@
 @import 'base/typography';
 
 @import 'layout/global';
-@import 'layout/navigation';
 @import 'layout/header';
 @import 'layout/footer';
-@import 'layout/forms';
 
 @import 'components/buttons';
 @import 'components/burger';
 
 @import 'pages/homepage';
+@import 'pages/about';
+@import 'pages/contact';
+@import 'pages/category';
+@import 'pages/latest';
 
 // @import 'abstracts/variables';
 // @import 'abstracts/functions';

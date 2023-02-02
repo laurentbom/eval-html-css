@@ -49,7 +49,7 @@ img{
 .hoverRed{
   transition: .3s all ease-in-out;
   &:hover{
-    color: $rouge;
+    color: $rouge !important;
   }
 }
 // Hover Scale sur image

@@ -1,0 +1,29 @@
+// Grid Colonnes
+.latestMain{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 30px;
+}
+.colBig{
+  margin: 50px auto;
+  padding-left: 25px;
+}
+.colSmall{
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // bannière pub + responsive
+  &__pub{
+    img{
+      width: 220px;
+      @media screen and (max-width:1200px){
+        width: 170px;
+      }
+      @media screen and (max-width:990px){
+        display: none;
+      }
+    }
+    
+  }
+}
