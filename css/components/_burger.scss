@@ -19,6 +19,9 @@
 		transform: translate(-50%,-50%);
 		transition: 0.3s ease-in-out;
 	}
+	span{
+		height: 3px;
+	}
 	span:before,
 	span:after {
 		content: '';
@@ -39,27 +42,27 @@
 		top: -6px;
 		transform: translate(-50%,-50%);
 	}
-	// ROTATION ON HOVER (pour le click rajouter une classe et js)
-	// &:hover {
-	// 	// TOP
-	// 	span:before {
-	// 		top: 50%;
-	// 		transform: translate(-50%,-50%) rotate(90deg);;
-	// 	}
-	// 	// MIDDLE
-	// 	span {
-	// 		transform: translate(-50%,-50%) rotate(-45deg);
-	// 		top: 50%;
-	// 	}
-	// 	// BOTTOM
-	// 	span:after {
-	// 		top: 50%;
-	// 		left: 0;
-	// 		transform: rotate(90deg);
-	// 		opacity: 0;
-	// 		width: 0;
-	// 	}
-	// }
+	// ROTATION (pour le click rajouter une classe et js)
+	&.burgerHover {
+		// TOP
+		span:before {
+			top: 50%;
+			transform: translate(-50%,-50%) rotate(90deg);;
+		}
+		// MIDDLE
+		span {
+			transform: translate(-50%,-50%) rotate(-45deg);
+			top: 50%;
+		}
+		// BOTTOM
+		span:after {
+			top: 50%;
+			left: 0;
+			transform: rotate(90deg);
+			opacity: 0;
+			width: 0;
+		}
+	}
 }
 // Burger Menu with position 
 // .burger-menu{
@@ -109,3 +112,4 @@
 //     background-color: gray;
 //   }
 // }
+

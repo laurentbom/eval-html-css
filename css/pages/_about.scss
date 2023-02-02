@@ -1,12 +1,6 @@
-// Lignes rouges
-.redLine{
-  height: 2px;
-  width: 50px;
-  background-color: $rouge;
-  display: inline-block;
-  margin-right: 10px;
-}
-// Section Mission & Visions + responsive
+//--------------------------------------------------
+//---------------Section Missions-------------------
+//--------------------------------------------------
 .main__mission{
   padding: 100px;
   @media screen and (max-width:990px){
@@ -37,7 +31,9 @@
     }
   }
 }
-// Section services
+//--------------------------------------------------
+//---------------Section Services-------------------
+//--------------------------------------------------
 .services__wrapper{
   background-image: url(https://www.cepegra-labs.be/webdesign/fed2022/oli/eval/assets/img/gallery/section_bg02.jpg);
   padding: 100px 0;
@@ -111,7 +107,9 @@
     }
   }
 }
-// Section Team Members
+//--------------------------------------------------
+//---------------Section Team Mambers---------------
+//--------------------------------------------------
 .team__container{
   padding: 100px 0;
 }

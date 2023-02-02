@@ -1,4 +1,5 @@
-// Mobile First
+// Mobile First, grand regret pour une page grosse comme ca j'ai pleuré
+// Les autres pages sont en desktop first du coup
 //--------------------------------------------------
 //---------------Section Principale-----------------
 //--------------------------------------------------
@@ -83,9 +84,24 @@
   border-radius: 10px;
   margin-bottom: 20px;
 }
+.main__new__col1__big__top{
+  @media screen and (min-width:1199px){
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    & ul{
+      padding: 30px;
+    }
+  }
+}
   // Content
   // Article Principal
 .main__new__col1__big__content{
+  @media screen and (min-width:1199px){
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+  }
   .content__big{
     a{
       font-size: 24px;
@@ -101,7 +117,7 @@
       margin-bottom: 10px;
     }
     p:last-child{
-      margin-bottom: 40px;
+      margin: 40px 0;
       line-height: 30px;
     }
     &__img{
@@ -128,6 +144,9 @@
       margin-bottom: 20px;
       display: inline-block;
     }
+    p:last-child{
+      margin-top: 20px;
+    }
   }
 }
 .content_sec_subject1{
@@ -149,6 +168,7 @@
   border-radius: 10px;
   margin: 30px 0 40px;
   padding: 30px 20px;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
@@ -330,7 +350,9 @@
   margin-bottom: 30px;
 }
 
-// Responsive
+//--------------------------------------------------
+//---------------Responsive-------------------------
+//--------------------------------------------------
 @media screen and (min-width:801px){
   // Partie principale et whats new
   .main__first, .main__new{

@@ -1,9 +1,15 @@
+//--------------------------------------------------
+//---------------Carte------------------------------
+//--------------------------------------------------
 .map{
   margin: 100px auto;
   @media screen and (max-width:570px){
     display: none;
   }
 }
+//--------------------------------------------------
+//---------------Titre------------------------------
+//--------------------------------------------------
 .contact__title{
   font-size: 27px;
   font-weight: 600;
@@ -11,7 +17,11 @@
     margin-top: 50px;
   }
 }
+//--------------------------------------------------
+//---------------Formulaires + infos-----------------
+//--------------------------------------------------
 .form{
+  // Grille
   display: grid;
   grid-template-columns: 3fr 1fr;
   column-gap: 60px;
@@ -20,6 +30,7 @@
   @media screen and (max-width:990px){
     grid-template-columns: 1fr;
   }
+  // Formulaires
   form{
     display: flex;
     align-items: center;
@@ -46,6 +57,7 @@
     }
   }
 }
+// Informations
 .form__infos{
   margin-top: 20px;
   @media screen and (max-width:990px){
